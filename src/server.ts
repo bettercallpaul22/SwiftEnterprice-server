@@ -93,7 +93,7 @@ app.get('/home', (req: Request, res: Response) => {
       features: [
         'Passenger registration and authentication',
         'Driver registration and authentication', 
-        'JWT-based authentication',
+        'JWT-based authentication..',
         'Firebase integration',
         'Comprehensive API documentation'
       ],
