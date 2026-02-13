@@ -12,8 +12,7 @@ module.exports = {
   // Function configuration
   functions: {
     'dist/server.js': {
-      maxDuration: 30,
-      runtime: 'nodejs20.x'
+      maxDuration: 30
     }
   }
 }
