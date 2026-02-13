@@ -1,8 +1,17 @@
 node_modules/
 .env
+.env.local
+.env.production
+.env.development
 serviceAccountKey.json
 .DS_Store
 *.log
 coverage/
 dist/
 build/
+*.test.ts
+*.spec.ts
+test/
+tmp/
+.vscode/
+.idea/
