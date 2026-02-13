@@ -76,6 +76,32 @@ app.get('/', (req: Request, res: Response) => {
   res.json({ message: 'Switch Server is running!' });
 });
 
+// Home route with welcome message
+app.get('/home', (req: Request, res: Response) => {
+  res.json({
+    success: true,
+    message: 'Welcome to Switch Server!',
+    data: {
+      name: 'Switch Server',
+      version: '1.0.0',
+      description: 'Backend API server for the Switch transportation platform',
+      endpoints: {
+        auth: '/api/auth',
+        docs: '/api-docs',
+        home: '/home'
+      },
+      features: [
+        'Passenger registration and authentication',
+        'Driver registration and authentication', 
+        'JWT-based authentication',
+        'Firebase integration',
+        'Comprehensive API documentation'
+      ],
+      status: 'Ready for deployment'
+    }
+  });
+});
+
 // Swagger UI route
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 
