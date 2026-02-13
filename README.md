@@ -57,6 +57,21 @@ FIREBASE_UNIVERSE_DOMAIN=googleapis.com
 5. Add all required environment variables in the Vercel project settings
 6. Deploy!
 
+### Vercel Configuration Files
+
+The following files have been configured for optimal Vercel deployment:
+
+- **`vercel.json`** - Main Vercel configuration with proper routing and function settings
+- **`vercel.config.js`** - Additional Vercel configuration for advanced routing
+- **`package.json`** - Updated with Node.js engine requirements and build scripts
+
+### Important Notes for Vercel
+
+- The server is configured to run on Node.js 20.x runtime
+- Maximum function duration is set to 30 seconds
+- All routes are properly mapped to handle both API and home endpoints
+- The `/home` endpoint provides a welcome message and API overview
+
 ### API Endpoints
 
 - `POST /api/auth/register/passenger` - Register a new passenger
